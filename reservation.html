@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Fortuna Restaurant</title>
+    <script src="https://kit.fontawesome.com/baa3304016.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="flexContainer flexJustifyContent-SpaceBetween flexAlignItemsCenter">
+            <div class="width40">
+                <h1><a href="index.html"><img src="pictures/interface/logo.png" alt="Logo du restaurant, deux coupe de champagne se touchant avec le nom du restaurant (La Fortuna) écrit." class="logo"></a></h1>
+            </div>
+            <nav class="width55 textAlignRight">
+                <ul class="textualMenu">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="reservation.html" class="selected">Réservation</a></li>
+                    <li><a href="restaurant.html">Restaurant</a></li>
+                    <li class="myOrder"><a href="myorder.html">Ma commande</a></li>
+                </ul>
+                <i class="fa-solid fa-bars iconMenu"></i>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <form action="confirmation.html" method="get" class="form">
+            <fieldset>
+                <legend><h2>Réservation</h2></legend>
+
+                <div class="formPositioning">
+                    <div class="width55">
+                        <label for="firstName">Votre prénom<span class='Important'>*</span></label><br>
+                        <input type="text" id="firstName" name="clientFirstName" placeholder="Votre nom..." minlength="2" maxlength="16" required>
+                    </div>
+                    <div class="marginTop25px">
+                        <label for="lastName">Votre nom de famille<span class='Important'>*</span></label><br>
+                        <input type="text" id="lastName" name="clientLastName" placeholder="Votre nom..." minlength="2" maxlength="16" required>
+                    </div>
+                </div>
+                <div class="marginTop25px">
+                    <label for="phoneNumber">Votre numéro de téléphone<span class='Important'>*</span></label><br>
+                    <input type="tel" id="phoneNumber" name="clientPhoneNumber" placeholder="810-777-7777" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                </div>
+                <div class="formPositioning marginTop25px">
+                    <div class="width55">
+                        <label for="dinning">Emplacement de la réservation <span class='Important'>*</span></label><br>
+                        <div class="formPositioning">
+                            <div class="margin2">
+                                <input type="radio" id="dinning" name="clientPlace" value="dinning" required checked> 
+                                <label for="dinning">Salle à manger</label> 
+                            </div>
+                            <div class="margin2">
+                                <input type="radio" id="terrace" name="clientPlace" value="terrace" required> 
+                                <label for="terrace">Terasse</label> 
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="marginTop25px">
+                        <label for="numberPresent">Combien de personne seront présente?<span class='Important'>*</span></label><br>
+                        <input type="number" id="numberPresent" name="clientNumberPresent" placeholder="3" required min="1" max="10">
+                    </div>
+                </div>
+                <div class="formPositioning marginTop25px">
+                    <div class="width55">
+                        <label for="reservationDate">La date de votre réservation <span class='Important'>*</span></label><br>
+                        <input type="date" id="reservationDate" name="clientReservationDate" required>
+                    </div>
+                    <div class="marginTop25px">
+                        <label for="dinning">Sélection l'heure de la réservation<span class='Important'>*</span></label><br>
+                        <select id="hours" name="hours" required>
+                            <option value="" disabled selected>Sélectionner une heure</option>
+                            <option value="12:00">12:00</option>
+                            <option value="12:00">12:00</option>
+                            <option value="12:30">12:30</option>
+                            <option value="13:00">13:00</option>
+                            <option value="13:30">13:30</option>
+                            <option value="17:00">17:00</option>
+                            <option value="17:30">17:30</option>
+                            <option value="18:00">18:00</option>
+                            <option value="18:30">18:30</option>
+                            <option value="19:00">19:00</option>
+                            <option value="19:30">19:30</option>
+                            <option value="20:00">20:00</option>
+                            <option value="20:30">20:30</option>
+                            <option value="21:00">21:00</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="marginTop25px">
+                    <label for="email">Votre adresse mail <span class='Important'>*</span></label><br>
+                    <input type="email" id="email" name="clientEmail" placeholder="laFortuna@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                </div>
+                <div class="marginTop25px">
+                    <label for="review">Commentaire supplémentaire</label><br>
+                    <textarea id="review" name="clientReview" rows="5" cols="35" placeholder="Écrivez votre commentaire..."></textarea> 
+                </div>
+                <div class="marginTop25px">
+                    <input type="checkbox" id="newsletter" name="clientNewsletter" value="yes"> <label for="newsletter"> Abonnement à l'infolettre</label>
+                </div>
+            </fieldset>
+            <br>
+            <input type="submit" value="Commander">
+        </form>
+    </main>
+    <footer>
+        <div class="flexContainer flexJustifyContent-SpaceBetween flexAlignItemsCenter">
+            <div>
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                     Réalisé par : Camille Élisabeth Bleau
+                </p>
+            </div>
+            <div>
+                <p>
+                    Réseaux sociaux : 
+                    <a href="https://www.facebook.com/Irajiack" target="_blank"><i class="fa-brands fa-square-facebook fontSize2"></i></a> 
+                    <a href="https://www.linkedin.com/in/camille-%C3%A9lisabeth-bleau-32992b238/" target="_blank"><i class="fa-brands fa-linkedin fontSize2"></i></a> 
+                    <a href="https://bsky.app/profile/irajiack.bsky.social" target="_blank"><i class="fa-brands fa-square-twitter fontSize2"></i></a> 
+                    <a href="https://www.instagram.com/irajiack/" target="_blank"><i class="fa-brands fa-square-instagram fontSize2"></i></a>
+                </p>
+            </div>
+        </div>
+        <div class="separators"></div>
+        <div class="flexContainer flexJustifyContent-SpaceBetween">
+            <div>
+                <p>
+                    Integration Web 1
+                </p>
+            </div>
+            <div>
+                <p>
+                    Cégep de Trois-Rivière
+                </p>
+            </div>
+            <div>
+                <p>
+                    Hiver 2023
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

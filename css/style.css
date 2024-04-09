@@ -1,0 +1,637 @@
+/* DOCUMENT INFORMATION
+    - Theme Name: Ebony of Gold
+    - Version:    1.0.0
+	- Author:     Camille Elisabeth Bleau
+*/
+
+/* CSS DIRECTORY
+	1. = PRIMARY LAYOUT
+    2. = SECONDARY LAYOUT
+	3. = SITE WIDE
+    4. = TEXT RELATED
+    5. = SALIENT FEATURES
+	6. = UTILITIES
+	7. = MISCELLANEOUS
+    8. = MEDIA QUERRIES
+*/
+
+/* COLORS
+	- default paragraph text  -- Platinum
+    - default header text     -- Vanilla & Fawn
+    - main background         -- RainsinBlack & Night
+    - header & footer         -- N/A
+    - links                   -- Fawn
+    - hover links             -- Vanilla
+*/
+
+/* FONTS
+	- default paragraph text   Overlock
+	- default header text      Philosopher
+*/
+
+/* ============================================= PRIMARY LAYOUT ================================================== */
+
+body 
+{
+    background: radial-gradient(circle at 100% 11%, var(--RaisinBlack) 0%, var(--Night) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width:100%;
+    margin:0px;
+    padding:0px;
+    height:100%;
+}
+
+header
+{
+    margin:0 auto 1% auto;
+    width:95%;
+    max-width:1200px;
+}
+
+footer
+{
+    width:95%;
+    max-width:1200px;
+    margin:1% auto 1% auto;
+}
+
+main
+{
+    margin:0 auto;
+    width:95%;
+    max-width:1200px;
+}
+
+.logo
+{
+    max-width:200px;
+    width:100%;
+}
+
+/* ============================================= SECONDARY LAYOUT ================================================ */
+
+fieldset
+{
+    color:var(--Platinum);
+    border: 2px solid var(--Fawn);
+    border-radius:10px;
+    padding:2%;
+}
+
+label
+{
+    font-family: "Overlock";
+    color:var(--Fawn);
+    font-size:1.5rem;
+}
+
+input[type=text],input[type=tel],input[type=number],input[type=date],input[type=email],select,textarea
+{
+    margin:5px 0 15px 0;
+    border:3px solid var(--Fawn);
+    border-radius:10px;
+    padding:10px;
+    background-color: var(--RaisinBlack);
+    color:var(--Platinum);
+}
+
+input[type=submit]
+{
+    background-color:var(--Night);
+    border:2px solid var(--Fawn);
+    border-radius:7px;
+    color:var(--Fawn);
+    cursor:pointer;
+    font-family: "Philosopher";
+    font-size:1.3rem;
+    margin:1% 0 1% 0;
+    padding:15px;
+    display:inline-block;
+}
+
+input[type=submit]:hover
+{
+    color: var(--Vanilla);
+    border:2px solid var(--Vanilla);
+}
+
+table
+{
+    width:100%;
+    color:var(--Platinum);
+    border-spacing: 0;
+}
+
+th
+{
+    font-family: "Philosopher";
+    text-align:left;
+    font-size:1.3rem;
+    padding:10px;
+    background-color:var(--Lion);
+}
+td
+{
+    font-family: "Overlock";
+    padding:10px;
+    font-size:1.2rem;
+}
+.tablePairRow
+{
+    font-family: "Philosopher";
+    text-align:left;
+    font-size:1.3rem;
+    padding:10px;
+    background-color:var(--Lion);
+}
+
+.clientsPictures
+{
+    width:80px;
+    border-radius:100%;
+    margin-right: 5%;
+}
+
+.clientsCard
+{
+    width: 30%;
+    max-width: 100%;
+    background-color: var(--Night);
+    border:1px solid var(--Fawn);
+    padding:1%;
+    border-radius:5%;
+    margin:1% 0 1% 0;
+}
+
+.restaurantPictures 
+{
+    display: grid;
+    justify-content: space-between;
+    align-content: space-between;  
+    width:100%; 
+}
+.grid-item
+{
+    padding:1.2%;
+}
+
+.textualMenu
+{
+    display:block;
+}
+.iconMenu
+{
+    display:none;
+    font-size:4rem;
+    color:var(--Fawn);
+}
+
+.formPositioning
+{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+/* ============================================= SITE WIDE ======================================================= */
+
+
+.flexContainer
+{
+    display:flex;
+    flex-wrap: wrap;
+    
+}
+
+ul 
+{
+    margin:0;
+}
+
+li
+{
+    list-style-type: none;
+    display:inline-block;
+    margin:2%;
+}
+.separators
+{
+    width:100%;
+    border-bottom:3px solid var(--Fawn);
+}
+
+.confirmation
+{
+    font-size:1.3rem;
+    color:green;
+    font-family: "Philosopher";
+    margin:10px 0 10px 0;
+}
+
+.commandDetails
+{
+    border:2px solid var(--Fawn);
+    width:30%;
+    border-radius:20px;
+    padding:2%;
+    height:fit-content;
+}
+
+iframe{
+    width:100%;
+    height:400px;
+}
+
+/* ============================================= TEXT RELATED ==================================================== */
+
+h1, h2, h3, h4, h5, h6
+{
+    margin:10px 0 10px 0;
+    font-family: "Philosopher";
+    color:var(--Fawn);
+}
+h1
+{
+    font-size:4.5rem;
+    color:var(--Vanilla);
+}
+
+h2
+{
+    font-size:3.2rem;
+    color:var(--Vanilla);
+}
+
+h3
+{
+    font-size:2.3rem;
+}
+
+h4
+{
+    font-size:2rem;
+}
+
+h5, h6
+{
+    font-size:1.3rem;
+}
+
+p
+{
+    font-family: "Overlock";
+    font-size:1.2rem;
+    color:var(--Platinum);
+}
+
+.bold
+{
+    font-weight: 900;
+    font-size:1.5rem;
+}
+
+/* ============================================= SALIENT FEATURES ================================================ */
+
+a
+{
+    color: var(--Fawn);
+    font-family: "Philosopher";
+    font-size:1.2rem;
+    padding:5px;
+}
+
+a:hover
+{
+    color: var(--Vanilla);
+    font-family: "Philosopher";
+    font-size:1.2rem;
+    padding:5px;
+}
+
+.selected
+{
+    color: var(--Platinum);
+    border-top:2px solid var(--Platinum);
+    border-bottom:2px solid var(--Platinum);
+}
+
+.selected:hover
+{
+    color: var(--Vanilla);
+    border-top:2px solid var(--Vanilla);
+    border-bottom:2px solid var(--Vanilla);
+}
+
+
+.goldButton
+{
+    background-color:var(--Night);
+    border:2px solid var(--Fawn);
+    border-radius:7px;
+    color:var(--Fawn);
+    cursor:pointer;
+    font-family: "Philosopher";
+    font-size:1.3rem;
+    margin:1%;
+    padding:1.5%;
+    display:inline-block;
+}
+
+.goldButton:hover
+{
+    color: var(--Vanilla);
+    border:2px solid var(--Vanilla);
+}
+
+.myOrder
+{
+    border: 2px dashed var(--Fawn);
+    padding:1.5%;
+    border-radius:10%;
+}
+.myOrder:hover
+{
+    border: 2px dashed var(--Vanilla);
+    padding:1.5%;
+    border-radius:10%;
+}
+
+.myOrderSelected
+{
+    border: 2px dashed var(--Platinum);
+    padding:1.5%;
+    border-radius:10%;
+    background-color:var(--Lion);
+}
+
+.myOrderSelected:hover
+{
+    border: 2px dashed var(--Vanilla);
+    padding:1.5%;
+    border-radius:10%;
+    background-color:var(--Lion);
+}
+
+.myOrderSelected a
+{
+    color:var(--Platinum);
+}
+.myOrderSelected a:hover
+{
+    color:var(--Vanilla);
+}
+
+.Important
+{
+    color:red;
+}
+
+/* ============================================= UTILITIES ======================================================= */
+
+.borderRadius_Left10
+{
+    border-radius:10px 0 0 10px;
+}
+.backgroundColor_Night
+{
+    background-color:var(--Night);
+}
+.fontSize1
+{
+    font-size:1rem;
+}
+.fontSize1_3
+{
+    font-size:1.3rem;
+}
+.fontSize2
+{
+    font-size:2rem;
+}
+.flexJustifyContent-SpaceBetween
+{
+    justify-content:space-between;
+}
+
+.flexAlignItemsCenter
+{
+    align-items:center;
+}
+
+.width30
+{
+    width: 30%;
+    max-width: 30%;
+}
+.width40
+{
+    width: 40%;
+    max-width: 40%;
+}
+.width45
+{
+    width: 45%;
+    max-width: 45%;
+}
+.width55
+{
+    width: 55%;
+    max-width: 55%;
+}
+.width60
+{
+    width: 60%;
+    max-width: 60%;
+}
+
+.width100
+{
+    width: 100%;
+    max-width: 100%;
+}
+.width200px
+{
+    width: 200px;
+}
+.margin1
+{
+    margin:1%;
+}
+.margin2 
+{
+    margin:2%;
+}
+.marginTop2
+{
+    margin-top:2%;
+}
+.marginTop25px
+{
+    margin-top:25px;
+}
+
+.marginTop80px
+{
+    margin-top:80px;
+}
+
+.displayInlineBlock
+{
+    display:inline-block;
+}
+.textAlignRight
+{
+    text-align: right;
+}
+.textAlignCenter
+{
+    text-align: center;
+}
+
+
+/* ============================================= FONTS =========================================================== */
+
+@font-face 
+{
+    font-family: "Philosopher";
+    src: url('/css/fonts/Philosopher/Philosopher-Regular.ttf') format('truetype');
+}
+
+@font-face 
+{
+    font-family: "Overlock";
+    src: url('/css/fonts/Overlock/Overlock-Regular.ttf') format('truetype');
+}
+
+:root
+{
+    --Night: #131313;
+    --RaisinBlack: #2D2D2D;
+    --Vanilla: #FCE4A6;
+    --Platinum: #E6E6E6;
+    --Fawn:#D4A97E;
+    --Lion:#977859;
+}
+/* ============================================= MEDIA QUERRIES ======================================================= */
+
+@media screen and (min-width:1200px)
+{
+    .restaurantPictures 
+    {
+        grid-template-columns: repeat(4, 25% [col-start]);
+    }
+
+    .item-c 
+    {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-end: span 2;
+    }
+    .item-d 
+    {
+        grid-column-start: 1;
+        grid-column-end:3;
+        grid-row-end: span 2;
+    }
+    .clientsCard
+    {
+        width:30%;
+        max-width:30%;
+    }
+}
+
+@media screen and (max-width:1200px) and (min-width:960px)
+{
+	.restaurantPictures 
+    {
+        grid-template-columns: repeat(2, 50% [col-start]);
+    }
+    .grid-item
+    {
+        padding:1.2%;
+    }
+    .item-c 
+    {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-end: span 2;
+
+    }
+
+    .item-f
+    {
+        grid-column-start: 1;
+        grid-column-end:3;
+        grid-row-end: span 2;
+    }
+    
+}
+
+@media screen and (max-width:960px)
+{
+	.restaurantPictures 
+    {
+        grid-template-columns: repeat(2, 50% [col-start]);
+    }
+    .textualMenu
+    {
+        display:none;
+    }
+    .iconMenu
+    {
+        display:block;
+    }
+    .formPositioning .width55
+    {
+        min-width:100%
+    }
+    .clientsCard
+    {
+        width:45%;
+        max-width:45%;
+    }
+    .googlemap
+    {
+        width:100%;
+        min-width:100%;
+    }
+    .contactDetails
+    {
+        width:100%;
+        min-width:100%;
+        text-align:center;
+    }
+}
+
+@media screen and (min-width:960px)
+{
+    .formPositioning .marginTop25px
+    {
+        margin-top:0px;
+    }
+}
+
+@media screen and (max-width:570px)
+{
+    .flexContainer .width60
+    {
+        min-width:100%;
+    }
+    .flexContainer .commandDetails
+    {
+        min-width:90%;
+        margin-top:50px;
+    }
+    .clientsCard
+    {
+        width:95%;
+        max-width:95%;
+    }
+}
+
+/* 
+    My brain: My job here is done! 
+    me: But you didn't do anything.
+    My brain: Turn around with a very dramatic cape swich.
+    Me looking at the deadline one day closer: **Sigh**  
+*/
